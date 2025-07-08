@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    padding:0;
+    margin:0;
+}
+
+/*  ########################### NORMALIZE HTML ########################## */
+
+
+*{
+    box-sizing: border-box;
+}
+
+section{
+    max-width:1400px;
+    width:100%;
+    margin:auto;
+}
+
+
+/* ############################ Global FONTS #####################################  */
+@font-face {
+    font-family: 'michroma';
+    src: url(./assets/fonts/Michroma-Regular.ttf);
+}
+
+
+/* ############################ GLOBAL ELEMENT STYLES ###################### */
+
+.teaser{
+    font-size:3rem;
+    font-family: 'michroma';
+    margin:0;
+    padding:0;
+}
