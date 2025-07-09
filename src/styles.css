@@ -18,6 +18,11 @@ section{
     margin:auto;
 }
 
+img{
+    width:100%;
+    object-fit: cover;
+}
+
 
 /* ############################ Global FONTS #####################################  */
 @font-face {

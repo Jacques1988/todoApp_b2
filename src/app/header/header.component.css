@@ -5,3 +5,12 @@ section{
     align-items:center;
     flex-direction: column;
 }
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:55px;
+    height:55px;
+    margin-top:2rem;
+}
