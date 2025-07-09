@@ -39,3 +39,19 @@ img{
     margin:0;
     padding:0;
 }
+
+
+/* ########################## RESPONSIVE AND MEDIA QUERIES ###################### */
+
+@media (max-width:625px){
+    .teaser{
+        font-size: 2rem;
+        margin-top:2rem;
+    }
+}
+
+@media (max-width:450px){
+    .teaser{
+        font-size:1.6rem;
+    }
+}
