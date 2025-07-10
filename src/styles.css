@@ -40,6 +40,28 @@ img{
     padding:0;
 }
 
+.teaser-scondary{
+    font-size:2rem;
+    font-family: 'michroma';
+    margin:0;
+    padding:0;
+}
+
+.btn{
+    padding:1rem;
+    border:none;
+    background-color:darkorchid;
+    color:#fff;
+    font-size:1.2rem;
+    border-radius:8px;
+    cursor: pointer;
+    transition: box-shadow 0.225s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: 0 10px 30px grey;
+}
+
 
 /* ########################## RESPONSIVE AND MEDIA QUERIES ###################### */
 
