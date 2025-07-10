@@ -40,7 +40,7 @@ img{
     padding:0;
 }
 
-.teaser-scondary{
+.teaser-secondary{
     font-size:2rem;
     font-family: 'michroma';
     margin:0;
@@ -56,6 +56,7 @@ img{
     border-radius:8px;
     cursor: pointer;
     transition: box-shadow 0.225s ease-in-out;
+    min-width:150px;
 }
 
 .btn:hover{
@@ -88,6 +89,10 @@ img{
         font-size: 2rem;
         margin-top:2rem;
     }
+
+    .teaser-secondary{
+        font-size:1.6rem;
+    }
 }
 
 @media (max-width:550px){
@@ -98,6 +103,16 @@ img{
     .btn{
         font-size:1rem;
         padding: 0.5rem;
+    }
+}
+
+@media (max-width:450px){
+    .btn{
+        min-width:100px;
+    }
+
+    .teaser-secondary{
+        font-size:1.3rem;
     }
 }
 
