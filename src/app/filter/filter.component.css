@@ -10,3 +10,10 @@ section{
     align-items: center;
     margin-top:2rem;
 }
+
+
+@media (max-width:625px){
+    .teaser-scondary{
+        display:none;
+    }
+}
