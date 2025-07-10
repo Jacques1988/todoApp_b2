@@ -65,6 +65,24 @@ img{
 
 /* ########################## RESPONSIVE AND MEDIA QUERIES ###################### */
 
+@media (max-width:1450px){
+    section{
+        padding:0 120px;
+    }
+}
+
+@media (max-width:860px){
+    section{
+        padding:0 40px;
+    }
+}
+
+@media (max-width:790px){
+    .teaser{
+        font-size:2.5rem;
+    }
+}
+
 @media (max-width:625px){
     .teaser{
         font-size: 2rem;
@@ -72,8 +90,25 @@ img{
     }
 }
 
+@media (max-width:550px){
+    section{
+        padding:0 20px;
+    }
+
+    .btn{
+        font-size:1rem;
+        padding: 0.5rem;
+    }
+}
+
 @media (max-width:450px){
     .teaser{
         font-size:1.6rem;
+    }
+}
+
+@media (max-width:375px){
+    .teaser{
+        font-size:1.3rem;
     }
 }
