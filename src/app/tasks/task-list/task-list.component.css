@@ -1,0 +1,63 @@
+.list-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-text,
+.task-status {
+    font-size: 1.3rem;
+    font-family: 'michroma';
+    min-width: 400px;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    margin-right: 3rem;
+    border: 1px solid black;
+}
+
+.checkbox:checked {
+    appearance: none;
+    /*  background-color:darkorchid; */
+    border: 1px solid lightgrey;
+    border-radius: 3px 7px 0 7px;
+ 
+    position: relative;
+}
+
+.checkbox:checked::before {
+    content: "✔";
+    position: absolute;
+    font-size: 2rem;
+    color: green;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+@media (max-width:768px){
+    .task-status{
+        display:none;
+    }
+}
+
+@media (max-width:500px){
+    
+    .list-element{
+        justify-content: flex-start;
+        margin-bottom:1rem;
+    }
+    
+    .task-text{
+        min-width:200px;
+        margin:0;
+    }
+
+    .checkbox{
+        margin-right:1rem;
+    }
+}

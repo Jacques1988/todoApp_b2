@@ -1,0 +1,22 @@
+
+section{
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    flex-direction: column;
+    margin-top:5rem;
+    
+}
+
+
+.task-list-container{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:100%;
+}
+
+.list-group{
+    padding:0;
+    margin:2rem 0 0 0;
+}
