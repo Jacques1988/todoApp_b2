@@ -1,27 +1,32 @@
-[
+export let tasks = [
     {
         id: "1",
-        task: "Dackel füttern",
-        status: "complete"
+        taskTitle: "Dackel füttern",
+        status: "complete",
+        checked: true,
     },
     {
         id: "2",
-        task: "Dackel gießen",
+        taskTitle: "Dackel gießen",
         status: "incomplete",
+        checked: false
     },
     {
         id: "3",
-        task: "Dackel knuddeln",
+        taskTitle: "Dackel knuddeln",
         status: "complete",
+        checked: true,
     },
     {
         id: "4",
-        task: "Einkaufen",
+        taskTitle: "Einkaufen",
         status: "incomplete",
+        checked: false,
     },
     {
         id: "5",
-        task: "Spazieren",
+        taskTitle: "Spazieren",
         status: "complete",
+        checked: true
     }
 ]

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TaskListComponent } from "./task-list/task-list.component";
+import { TaskService } from '../services/task.service';
 
 @Component({
   selector: 'app-tasks',
@@ -8,5 +9,8 @@ import { TaskListComponent } from "./task-list/task-list.component";
   styleUrl: './tasks.component.css'
 })
 export class TasksComponent {
+  tasks = inject(TaskService).getAllTasks()
+
+
 
 }
