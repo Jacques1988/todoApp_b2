@@ -4,7 +4,7 @@
     <ul class="list-group">
       @if(tasks()){
         @for (task of tasks(); track task.id) {
-          <app-task-list [data]="task"></app-task-list>
+          <app-task-list [data]="task" (updateTaskEvent)="updateTask(task)"></app-task-list>
         }
       }
     </ul>

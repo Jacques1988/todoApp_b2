@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class TaskService {
-  tasks = signal<Task[]>(tasks)
+  todos = tasks
+  tasks = signal<Task[]>(this.todos)
 
   constructor() { }
 
@@ -18,6 +19,11 @@ export class TaskService {
   }
 
  
+  updateTask(updatedTask:Task){
+    let taskIndex = this.todos.findIndex((todo) => todo.id === updatedTask.id)
+    this.todos.splice(taskIndex, 1)
+    this.todos.splice(taskIndex, 0, updatedTask)
+  }
 
 
 }

@@ -38,6 +38,10 @@
     right: 0;
 }
 
+.text-stroke{
+    text-decoration: line-through;
+}
+
 
 @media (max-width:768px){
     .task-status{

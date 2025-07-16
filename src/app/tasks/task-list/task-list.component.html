@@ -1,6 +1,10 @@
-
 <li class="list-element">
-  <input [checked]="data().checked" class="checkbox" type="checkbox" (change)="toggleStatus()" />
-  <p class="task-text">{{ data().taskTitle }}</p>
+  <input
+    [checked]="data().checked"
+    class="checkbox"
+    type="checkbox"
+    (change)="toggleStatus()"
+  />
+  <p [ngClass]="{'text-stroke': data().checked}" class="task-text">{{ data().taskTitle }}</p>
   <p class="task-status">{{ data().status }}</p>
 </li>
