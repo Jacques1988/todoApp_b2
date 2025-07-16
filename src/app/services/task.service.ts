@@ -18,6 +18,17 @@ export class TaskService {
     return this.tasks
   }
 
+  addNewTask(task:string){
+
+   const newTask = {
+      id: this.todos.length + 1,
+      taskTitle: task,
+      status: "incomplete",
+      checked: false
+    }
+
+    this.todos.push(newTask)
+  }
  
   updateTask(updatedTask:Task){
     let taskIndex = this.todos.findIndex((todo) => todo.id === updatedTask.id)

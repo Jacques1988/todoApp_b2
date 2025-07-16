@@ -2,8 +2,8 @@
 <section>
     <h1 class="teaser-secondary">Add a new task</h1>
     <div class="input-group">
-        <input class="new-task-input" type="text" placeholder="Add a new Task">
-        <button class="btn">
+        <input #newTaskInput class="new-task-input" type="text" placeholder="Add a new Task">
+        <button (click)="addNewTask()" class="btn">
             Add Task
         </button>
     </div>
