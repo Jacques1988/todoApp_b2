@@ -1,9 +1,9 @@
 <section>
     <h1 class="teaser-secondary">Filter Controls</h1>
     <div class="button-container">
-        <button class="btn">All Tasks</button>
-        <button class="btn">Completed</button>
-        <button class="btn">Incompleted</button>
+        <button (click)="getAllTasks()" class="btn">All Tasks</button>
+        <button (click)="filterCompletedTasks()" class="btn">Completed</button>
+        <button (click)="filterIncompletedTasks()" class="btn">Incompleted</button>
     </div>
 </section>
 
