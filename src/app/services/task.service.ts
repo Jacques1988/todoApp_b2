@@ -15,6 +15,7 @@ export class TaskService {
 
 
   getAllTasks(){
+    this.tasks.set(this.todos)
     return this.tasks
   }
 
@@ -35,5 +36,14 @@ export class TaskService {
     this.todos.splice(taskIndex, 0, updatedTask)
   }
 
+
+  filterCompleted(){
+    this.tasks.set( this.todos.filter((task) => task.status === "complete") )
+  }
+
+
+  filterIncomplete(){
+    this.tasks.set( this.todos.filter((task) => task.status === "incomplete"))
+  }
 
 }
