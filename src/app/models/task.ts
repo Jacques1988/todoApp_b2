@@ -4,3 +4,4 @@ export interface Task {
     status:string;
     checked: boolean;
 }
+

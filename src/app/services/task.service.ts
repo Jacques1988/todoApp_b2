@@ -21,12 +21,11 @@ export class TaskService {
   addNewTask(task:string){
 
    const newTask = {
-      id: this.todos.length + 1,
+      id: (this.todos.length + 1).toString(),
       taskTitle: task,
       status: "incomplete",
       checked: false
     }
-
     this.todos.push(newTask)
   }
  
