@@ -1,19 +1,10 @@
-
-
 <li class="list-element">
-    <input class="checkbox" type="checkbox">
-    <p class="task-text">Dackel füttern</p>
-    <p class="task-status">Incomplete</p>
-</li>
-
-<li class="list-element">
-    <input class="checkbox" type="checkbox">
-    <p class="task-text">Dackel gießen</p>
-    <p class="task-status">complete</p>
-</li>
-
-<li class="list-element">
-    <input class="checkbox" type="checkbox">
-    <p class="task-text">Würstchen essen</p>
-    <p class="task-status">complete</p>
+  <input
+    [checked]="data().checked"
+    class="checkbox"
+    type="checkbox"
+    (change)="toggleStatus()"
+  />
+  <p [ngClass]="{'text-stroke': data().checked}" class="task-text">{{ data().taskTitle }}</p>
+  <p class="task-status">{{ data().status }}</p>
 </li>
